@@ -31,10 +31,10 @@ a:active { text-decoration: none; }
     
 }
 .logo{
-    height: 121px;
-    width:121px;
-    margin-left: 36px;
-    margin-right: 108px;
+    height: 6.3vw;
+    width:6.3vw;
+    margin-left: 1.875vw;
+    margin-right: 5.625vw;
     display: inline-block;
 }
 .boutonmenu{
@@ -49,7 +49,7 @@ a:active { text-decoration: none; }
 }
 .boutonm{
     color: white;
-    margin-right: 108px;
+    margin-right: 5.625vw;
     width: 108px;
     height: 29px;
     border: 2px solid;
@@ -70,7 +70,7 @@ a:active { text-decoration: none; }
     }
 input{
     height:29px ;
-    width:110px ;
+    width:5.7vw ;
     background-color: gray;
 }
 
@@ -80,11 +80,11 @@ input{
 }
 .searchglass{
     width: 29px;
-    margin-left: 14px;
+    height: 29px;
+    margin-left: 2vw;
 }
 .lang{
     color: white;
-    margin-left: 2vw;
     display: flex;
     flex-direction: row;
     font-size:  1.25vw;
@@ -137,6 +137,7 @@ section.top-header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
     position: relative;
 }
 
@@ -227,14 +228,14 @@ section.top-header::after{
 .expos {
     background-color: #6B1122;
     width: 100vw;
-    height: 54vw;
+    height: 1037px;
 }
 
 .slide {
     display: inline-block;
-    margin-top: 5.4vw;
+    margin-top: 104;
     width: 100vw;
-    height: 40vw;
+    height: 768px;
 }
 
 @font-face {
@@ -308,10 +309,10 @@ section.top-header::after{
 .CSSgal .prevNext {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 10%;
     left: 10%;
     width: 80%;
-    height: 0;
+    height: 0px;
 }
 
 .CSSgal .prevNext>div+div {
@@ -350,7 +351,7 @@ section.top-header::after{
     position: absolute;
     transform: translate(0%, -140%);
     z-index: 2;
-    bottom: 0;
+    bottom: -50px;
     padding: 10px 0;
     width: 100%;
     text-align: center;
@@ -480,16 +481,16 @@ s
     position: absolute;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    top: 55%;
+    top: 20vw;
     left: 50%;
-    transform: translate(-50%, -1520%);
+    transform: translate(-50%, -20vw);
 }
 
 .expotitr1 {
     font-family: Lora;
     position: absolute;
-    font-size: 80px;
-    top: 20%;
+    font-size: 4.2vw;
+    top: 10vw;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -522,16 +523,16 @@ s
 .expotxt2 {
     position: absolute;
     font-size: 20px;
-    top: 55%;
+    top: 20vw;
     left: 50%;
-    transform: translate(-50%, -1520%);
+    transform: translate(-50%, -20vw);
 }
 
 .expotitr2 {
-    font-family: Lora;
+    font-family: 'Lora';
     position: absolute;
-    font-size: 80px;
-    top: 20%;
+    font-size: 4.2vw;
+    top: 10vw;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -564,16 +565,16 @@ s
 .expotxt3 {
     position: absolute;
     font-size: 20px;
-    top: 55%;
+    top: 20vw;
     left: 50%;
-    transform: translate(-50%, -1520%);
+    transform: translate(-50%, -20vw);
 }
 
 .expotitr3 {
     font-family: Lora;
     position: absolute;
-    font-size: 80px;
-    top: 20%;
+    font-size: 4.2vw;
+    top: 10vw;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -610,12 +611,13 @@ s
     background-color: black;
     display: flex;
     color: white;
-    height: 897px;
+    height: 46.7vw;
     justify-content: space-between;
     margin-bottom: 300px;
 }
 .larg-collec{
     width: 64vw;
+    height: 46.7vw;
     right: 100%;
     margin: 0;
 }
@@ -623,23 +625,24 @@ s
 .collectext{
     text-align: center;
     font-family: 'Roboto';
-    height: 100%;
+    height: 46.7vw;
     margin-left: 2%;
 }
 
 .collecpres{
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 5.2vw;
 }
 .collecpara{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
+    margin-top: 5vw;
     font-size: 18px;
     width: 20vw;
 }
 
 .buttonww {
+    transform: translate(0,15vw);
     color: white;
     display: flex;
     align-content: center;
@@ -924,5 +927,16 @@ section.info{
 
 .infosms{
     margin-top: 400px;
-    margin-bottom: 200px;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .boutonmenu{
+        display: none;
+    }
+    .logo{
+        width: 121px;
+        height: 121px;
+    }
 }
