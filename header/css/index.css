@@ -1,0 +1,927 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+
+
+
+.menu{
+    width: 100vw;
+    height: 121px;
+    background-color: black;
+    text-align: left;
+    margin: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.logo{
+    height: 121px;
+    width:121px;
+    margin-left: 36px;
+    margin-right: 108px;
+    display: inline-block;
+}
+.boutonmenu{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.boutonm{
+    color: white;
+    margin-right: 108px;
+    width: 108px;
+    height: 29px;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom, white, white) 0 1;
+    transition: transform 1s;
+}
+.centre{
+    margin: 0px;
+}
+.boutonm:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    }
+
+    .search{
+        display: flex;
+    }
+input{
+    height:29px ;
+    width:110px ;
+    background-color: gray;
+}
+
+::placeholder{
+    
+    color: white;
+}
+.searchglass{
+    width: 29px;
+    margin-left: 14px;
+}
+.lang{
+    color: white;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    font-size:  1.25vw;
+}
+.lan{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-left: .5vw;
+    margin-right: .5vw;
+}
+
+
+
+
+
+
+.grandtitre{
+    color: rgb(255, 255, 255);
+    font-family: 'Lora';
+    font-size: 60px;
+    width: 600px;
+    text-align: center; 
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.Acceuil p{
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20vh;
+    bottom: 10vh;
+
+}
+
+.Acceuil{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+section.top-header{
+    background-image: url("/images/musée-fond-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+section.top-header::after{
+    content: "";
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+
+
+
+.Partiemusee  h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Lora';
+    font-size: 5vw;
+    max-width: 1000px;
+    margin: 172px;
+    
+    margin-left: 20vw;
+}
+
+.Partiemusee p{
+    color: #8A8A8A;
+    font-family: 'Roboto';
+    font-size: 40px;
+    max-width: 1100px;
+    margin: 172px;
+}
+
+.Partiemusee  h3{
+    color: #8A8A8A;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 400;
+    margin: 172px;
+}
+
+.Partiemusee a{
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 400;
+    margin: 172px;
+    margin: 0;
+    color: black;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+.title {
+    font-size: 5vw;
+    font-family: 'Lora';
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.top {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: black;
+}
+
+.expos {
+    background-color: #6B1122;
+    width: 100vw;
+    height: 54vw;
+}
+
+.slide {
+    display: inline-block;
+    margin-top: 5.4vw;
+    width: 100vw;
+    height: 40vw;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Italic.woff2') format('woff2'),
+        url('Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Regular.woff2') format('woff2'),
+        url('Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.slide {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.slide {
+    height: 100%;
+}
+
+.slide {
+    font: 16px/1.3 sans-serif;
+}
+
+/*
+  PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+  http://stackoverflow.com/a/34696029/383904
+  */
+
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider>* {
+    display: inline-block;
+    white-space: normal;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 0;
+}
+
+.CSSgal .prevNext>div+div {
+    visibility: hidden;
+    /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    /* If you want to place numbers */
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(300%);
+    transform: translateY(300%);
+    left: 0;
+}
+
+.CSSgal .prevNext a:hover {
+    opacity: 1;
+}
+
+.CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+    position: absolute;
+    transform: translate(0%, -140%);
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.CSSgal .bullets>a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.CSSgal .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+    /* Dim all but first */
+}
+
+.CSSgal .bullets>a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal>s:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ACTIVE */
+#s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+s
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal>s:target~.prevNext>* {
+    visibility: hidden;
+}
+
+/* ACTIVE: */
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
+
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal {
+    color: #fff;
+    text-align: center;
+}
+
+.CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+}
+
+.CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.expoi {
+    width: 60vw;
+    filter: brightness(50%);
+
+}
+
+.CSSgal {
+    height: 40vw;
+}
+
+.i1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.expotxt1 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -1520%);
+}
+
+.expotitr1 {
+    font-family: Lora;
+    position: absolute;
+    font-size: 80px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button1 {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.i2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.expotxt2 {
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -1520%);
+}
+
+.expotitr2 {
+    font-family: Lora;
+    position: absolute;
+    font-size: 80px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.button2 {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.i3 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.expotxt3 {
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -1520%);
+}
+
+.expotitr3 {
+    font-family: Lora;
+    position: absolute;
+    font-size: 80px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.button3 {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
+
+.collectitr{
+    margin-left: 20vw;
+    
+    font-family: 'Lora';
+    font-size: 5vw;
+}
+.collec{
+    background-color: black;
+    display: flex;
+    color: white;
+    height: 897px;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+.larg-collec{
+    width: 64vw;
+    right: 100%;
+    margin: 0;
+}
+
+.collectext{
+    text-align: center;
+    font-family: 'Roboto';
+    height: 100%;
+    margin-left: 2%;
+}
+
+.collecpres{
+    font-size: 30px;
+    margin-top: 100px;
+}
+.collecpara{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    font-size: 18px;
+    width: 20vw;
+}
+
+.buttonww {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-footer (html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ), .section-section-evenement (html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ) {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align : baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.section-footer, .section-section-evenement {
+	display: block;
+}
+.section-footer {
+	line-height: 1;
+}
+.section-footer ul, .section-footer ol, .section-section-evenement ul, .section-section-evenement ol{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.region-footer-start {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 240px;
+    width: 100vw;
+}
+
+.region-footer-end {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-title {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 56px;
+}
+
+.sociallogo img {
+    width: 97px;
+    height: 100px;
+    margin-bottom: 42px;
+}
+
+.linkfooter a {
+    display: inline-block;
+    font-family: 'Roboto';
+    color: white;
+    margin-bottom: 42px;
+    text-decoration: underline;
+}
+
+.autoscroll {
+    margin-bottom: 0px;
+    margin-top: 126px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.region-footer-end-part1 {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mentionlegal {
+    padding-left: 70px;
+}
+
+.credit {
+    padding-left: 70px;
+} 
+
+
+.region-footer-end-part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logometropolerouen {
+    width: 111px;
+    height: 90px;
+    padding-right: 70px;
+}
+
+.logorouen {
+    width: 142px;
+    height: 174px;
+    padding-right: 70px;
+}
+
+
+
+.section-block-start {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+height: 342px;
+margin-left: 0;
+}
+
+.block-title-evenement {
+    color: white;
+    top: 2868px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 20vw;
+}
+
+.imgbouton {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+    margin-right: 15vw;
+    margin-top: 20px;
+}
+
+.section-block-end {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.section-planning-texte {
+    /* display: inline-block; */
+}
+
+.section-planning-photo {
+    display: inline-block;
+    align-items: flex-end;
+}
+
+.block-musee-ba {
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.block-date-musee-ba {
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 250px;
+}
+
+.block-title-musee-ba {
+    font-family: 'Lora';
+    font-size: 30px;
+}
+
+.block-texte-planning {
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.section-planning-border {
+    margin-left: 200px;
+    border-top: 1px solid white;
+}
+
+.section-planning-part4 {
+    width: 50%;
+    height: 1300px;
+}
+.gosse{
+    
+    width: 40vw;
+    height: 1300px;
+    object-fit: cover;
+}
+
+section.info{
+    background-color: rgb(0, 0, 0);
+}
+
+.info-utile h2{
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 20vh;
+}
+
+.info-utile h3{
+    color:rgb(255, 255, 255);
+    position: relative;
+    bottom: 20vh;
+}
+
+.info-utile a{
+    color: white;
+    margin: 172px;
+    position: relative;
+    bottom: 20vh;
+}
+
+.infosms{
+    margin-top: 400px;
+    margin-bottom: 200px;
+}
