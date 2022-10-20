@@ -129,7 +129,7 @@ input{
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 5;
 }
 
 section.top-header{
@@ -149,7 +149,7 @@ section.top-header::after{
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
+    z-index: 4;
 }
 
 
@@ -308,7 +308,7 @@ section.top-header::after{
 
 .CSSgal .prevNext {
     position: absolute;
-    z-index: 1;
+    z-index: 5;
     top: 10%;
     left: 10%;
     width: 80%;
@@ -350,7 +350,7 @@ section.top-header::after{
 .CSSgal .bullets {
     position: absolute;
     transform: translate(0%, -140%);
-    z-index: 2;
+    z-index: 6;
     bottom: -50px;
     padding: 10px 0;
     width: 100%;
@@ -642,7 +642,7 @@ s
 }
 
 .buttonww {
-    transform: translate(0,15vw);
+    transform: translate(0,0);
     color: white;
     display: flex;
     align-content: center;
@@ -839,7 +839,7 @@ margin-left: 0;
     font-size: 1.25vw;
     width: 14vw;
     height: 4vw;
-    border-radius: 4vw;
+    border-radius: 40px;
     outline-style: solid;
     outline-width: 5px;
     outline-color: white;
@@ -887,12 +887,12 @@ margin-left: 0;
 }
 
 .section-planning-border {
-    margin-left: 200px;
+    margin-left: 24.3vw;
     border-top: 1px solid white;
 }
 
 .section-planning-part4 {
-    width: 50%;
+    width: 500%;
     height: 1300px;
 }
 .gosse{
@@ -902,32 +902,102 @@ margin-left: 0;
     object-fit: cover;
 }
 
-section.info{
-    background-color: rgb(0, 0, 0);
+
+
+
+
+.title-info-utile {
+    background-color: white;
+    color: black;
+    font-family: 'Lora';
 }
 
-.info-utile h2{
-    color: rgb(0, 0, 0);
-    position: relative;
-    bottom: 20vh;
-}
 
-.info-utile h3{
-    color:rgb(255, 255, 255);
-    position: relative;
-    bottom: 20vh;
+
+.texte-info-utile {
+    background-color: black;
+    color: white;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 
 .info-utile a{
     color: white;
-    margin: 172px;
-    position: relative;
-    bottom: 20vh;
 }
 
-.infosms{
-    margin-top: 400px;
+.iconeposition img {
+    width: 30px;
+    height: 36px;
+    margin-left: 12vw;
+    margin-right: 30px;
 }
+
+.iconehorloge img {
+    width: 30px;
+    height: 30px;
+    margin-left: 12vw;
+    margin-right: 30px;
+}
+
+.iconetelephone img {
+    width: 30px;
+    height: 30px;
+    margin-left: 12vw;
+    margin-right: 30px;
+
+}
+
+.iconeposition {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.iconehorloge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.iconetelephone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.boutoninfo {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25vw;
+    width: 14vw;
+    height: 4vw;
+    border-radius: 4vw;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: white;
+    margin-left: 70vw;
+}
+
+.iconeposition a {
+    color: white;
+    text-decoration: none;
+}
+
+.iconetelephone a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
 
 
 
@@ -938,5 +1008,289 @@ section.info{
     .logo{
         width: 121px;
         height: 121px;
+    }
+
+
+
+    #toggle {
+        display: none;
+      }
+      
+      /**
+        Hamburger
+      **/
+      .hamburger {
+        position: absolute;
+        top: 5em;
+        right: 5%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 9;
+      }
+      
+      .hamburger div {
+        position: relative;
+        width: 3em;
+        height: 7px;
+        border-radius: 3px;
+        background-color: white;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      /**
+      Nav Styles
+      **/
+      .nav {
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        top: -100%; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        z-index: 8;
+      }
+      .nav-wrapper {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+      }
+      nav {
+        margin-left: 20vw;
+      }
+      nav a {
+        position: relative;
+        text-decoration: none;
+        color: #6ecddd;
+        font-size: 2em;
+        display: inline-block;
+        margin-top: 1.25em;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 1px;
+      }
+      nav a:before {
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 0.25em;
+        background-color: white;
+        left: -0.5em;
+        transition: all 0.2s ease-in-out;
+      }
+      nav a:hover {
+        color: white;
+      }
+      nav a:hover:before {
+        height: 100%;
+      }
+      
+      .hamburger{
+        margin-right: 50px;
+      }
+      /**
+      Animations
+      **/
+      #toggle:checked + .hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+      }
+      #toggle:checked + .hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+      }
+      #toggle:checked + .hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+      }
+      
+      
+      #toggle:checked + .hamburger + .nav {
+        top: 0;
+        transform: scale(1);
+      }
+
+      .logo{
+        margin-left: 1.875vw;
+        margin-right: 1.875vw;
+        display: inline-block;
+      }
+
+      .boutonmm{
+        margin-top: 100px;
+        color: white;
+        margin-right: 5.625vw;
+        width: 55.5vw;
+        height: 50px;
+        align-content: center;
+        border-top: solid white;
+        border-bottom: solid white;
+        display: block;
+        text-align: center;
+    }
+
+    .langm{
+        transform: translate(-15%,50%);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .MDBA{
+        color: white;
+        font-size: 20px;
+        width: 100vw;
+        float: left;
+        transform: translate(-5%,50%);
+    }
+    .logom{
+        margin-top: 100px;
+        width: 50px;
+    }
+.grandtitre{
+    font-size: 30px;
+}
+
+
+    .Partiemusee  h2{
+        color: rgb(0, 0, 0);
+        font-family: 'Lora';
+        font-size: 40px;
+        max-width: 1000px;
+        margin: 172px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 20vw;
+    }
+    .Acceuil p{
+        transform: translate(-20%,0%);
+        font-size: 12;
+    }
+    .Partiemusee p{
+        font-size: 20px;
+        margin: 60px;
+        margin-bottom: 0px;
+        
+    }
+    .Partiemusee a{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 40px;
+    }
+
+    .gosse, .expos,.lang,.search,.block-musee-ba-3, .pccoll, .button{
+        display: none;
+        size: 0;
+    }
+    .section-planning-border{
+        width: 50vw;
+    }
+    .section-block-end{
+        height: 900px;
+    }
+    .section-planning-part2{
+        height: 40%;
+    }
+    .lele{
+        width: 200px;
+        height: 50px;
+    }
+    .imgbouton{
+        margin: 0px;
+        height: 50px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 18.75vw;
+    }
+    .block-title-musee-ba{
+        font-size: 18px;
+    }
+    .block-title-evenement, .collectitr{
+        font-size: 40px;
+    }
+    .block-date-musee-ba{
+        font-size: 16px;
+    }
+    .block-musee-ba{
+        font-size: 16px;
+    }
+    .section-block-start{
+        height: 200px;
+    }
+    .larg-collec{
+        display: none;
+    }
+    .collecpara{
+        width: 40vw;
+        font-size: 16px;
+    }
+    .collecpres{
+        font-size: 30px;
+    }
+    .block-texte-planning{
+        padding-bottom: 20px;
+    }
+    .collec{
+        height: 500px; 
+    margin-bottom: 50px;   }
+    .buttonww, .boutoninfo{
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .boutoninfo{
+        margin-left: 12vw;
+    }
+    .section-info{
+        margin-top: 50px;
+    }
+    .tiu{
+        font-size: 40px;
+        margin-left: 20vw;
+    }
+    .texte-info-utile{
+        padding-bottom: 50px;
+    }
+    .socio{
+        display: none;
+    }
+
+
+    .region-footer-start{
+        flex-direction: column;
+    }
+    .autoscroll{margin-left: 55vw;}
+    .block-footer, .block-footer2{
+        margin-left: 10vw;
+    }
+    .region-footer-end{
+        flex-direction: column;
+    }
+    .region-footer-end-part2, .region-footer-end-part1{
+        justify-content: space-evenly;
+    }
+    .region-footer-end ul, .region-footer-end img, .region-footer-end a{
+        padding: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 1021px) {
+.hamburger * , #toggle , .nav{
+    display: none;
+
+  }
+    .lele{
+        display: none;
+    }
+    .title-info-utile h2 {
+        margin-left: 20vw;
+        font-size: 5vw;
+        margin-bottom: 60px;
     }
 }
