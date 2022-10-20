@@ -1,6 +1,9 @@
 html,body {
     margin:0;
     padding:0;
+        max-width: 100%;
+        overflow-x: hidden;
+    
 }
 a:link { text-decoration: none; }
 
@@ -849,9 +852,7 @@ margin-left: 0;
 }
 
 
-.section-planning-texte {
-    /* display: inline-block; */
-}
+
 
 .section-planning-photo {
     display: inline-block;
