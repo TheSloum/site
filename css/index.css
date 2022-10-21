@@ -132,7 +132,7 @@ input{
     z-index: 5;
 }
 
-section.top-header{
+div.top-header{
     background-image: url("/images/musée-fond-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@ section.top-header{
     position: relative;
 }
 
-section.top-header::after{
+div.top-header::after{
     content: "";
     background: rgba(0,0,0,0.5);
     position: absolute;
@@ -668,7 +668,7 @@ s
 
 
 
-.section-footer (html, body, div, span, applet, object, iframe,
+.div-footer (html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -679,8 +679,8 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video ), .section-section-evenement (html, body, div, span, applet, object, iframe,
+menu, nav, output, ruby, div, summary,
+time, mark, audio, video ), .div-div-evenement (html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -691,7 +691,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, div, summary,
 time, mark, audio, video ) {
 	margin: 0;
 	padding: 0;
@@ -701,13 +701,13 @@ time, mark, audio, video ) {
 	vertical-align : baseline;
 }
 /* HTML5 display-role reset for older browsers */
-.section-footer, .section-section-evenement {
+.div-footer, .div-div-evenement {
 	display: block;
 }
-.section-footer {
+.div-footer {
 	line-height: 1;
 }
-.section-footer ul, .section-footer ol, .section-section-evenement ul, .section-section-evenement ol{
+.div-footer ul, .div-footer ol, .div-div-evenement ul, .div-div-evenement ol{
 	list-style: none;
 }
 blockquote, q {
@@ -809,7 +809,7 @@ html {
 
 
 
-.section-block-start {
+.div-block-start {
     background-color: black;
     color: white;
     display: flex;
@@ -847,7 +847,7 @@ margin-left: 0;
     margin-top: 20px;
 }
 
-.section-block-end {
+.div-block-end {
     background-color: black;
     color: white;
     display: flex;
@@ -857,7 +857,7 @@ margin-left: 0;
 
 
 
-.section-planning-photo {
+.div-planning-photo {
     display: inline-block;
     align-items: flex-end;
 }
@@ -886,12 +886,12 @@ margin-left: 0;
     padding-bottom: 150px;
 }
 
-.section-planning-border {
-    margin-left: 24.3vw;
+.div-planning-border {
+    margin-left: 15vw;
     border-top: 1px solid white;
 }
 
-.section-planning-part4 {
+.div-planning-part4 {
     width: 500%;
     height: 1300px;
 }
@@ -1186,13 +1186,13 @@ margin-left: 0;
         display: none;
         size: 0;
     }
-    .section-planning-border{
+    .div-planning-border{
         width: 50vw;
     }
-    .section-block-end{
+    .div-block-end{
         height: 900px;
     }
-    .section-planning-part2{
+    .div-planning-part2{
         height: 40%;
     }
     .lele{
@@ -1218,7 +1218,7 @@ margin-left: 0;
     .block-musee-ba{
         font-size: 16px;
     }
-    .section-block-start{
+    .div-block-start{
         height: 200px;
     }
     .larg-collec{
@@ -1245,7 +1245,7 @@ margin-left: 0;
     .boutoninfo{
         margin-left: 12vw;
     }
-    .section-info{
+    .div-info{
         margin-top: 50px;
     }
     .tiu{
@@ -1280,11 +1280,11 @@ margin-left: 0;
         margin-bottom: 100px;
     }
     .expotxt1, .expotxt2, .expotxt3{
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .expotitr1, .expotitr2, .expotitr3{
-        font-size: 20px;
+        font-size: 16px;
     }
     .exposm{
         background-color: #6B1122 ;
