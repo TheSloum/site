@@ -1,0 +1,247 @@
+html  {
+    background-image: linear-gradient(to bottom right,  rgb(119, 194, 157),  rgb(194, 119, 169));
+}
+
+.construc{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.comics{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}
+.title{
+    font-size: 100px;
+}
+.title-com{
+    font-family: "Dela Gothic One";
+    font-size: 40px;
+    text-align: center;
+    justify-self: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.paragraph-com{
+    line-height: 40px;
+    font-family: "Dela Gothic One";
+    font-size: 20px;
+    text-align: left;
+    justify-self: center;
+    letter-spacing: 1px;
+}
+
+.paragraph{
+    font-family: "Dela Gothic One";
+    font-size: 30px;
+    width: 80%;
+    text-align: left;
+    justify-self: center;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+}
+a:not(.link-cs) p:hover {
+    background-color:blueviolet;
+  }
+
+  .link-cs{
+    
+  pointer-events: none;
+  }
+.about{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    
+    width: 60vw;
+    background-color: rgb(209, 236, 248);
+    transform: translate(20vw, 5vh);
+    border-radius: 90px 90px 90px 90px;
+    box-shadow: 0px 20px teal;
+}
+
+
+h1{
+    text-align: center;
+    font-family: "Dela Gothic One";
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pfp{
+    position: relative;
+    padding-top: 3vh;
+    left: 25vw;
+    width: 10vw;
+}
+.soc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.link{
+    width: 3vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.bande{
+    width: 60vw;
+    height: 15vh;
+    display: block;
+    margin-bottom: 0vh;
+    margin-top: 2vh;
+    object-fit: cover;
+
+}
+
+.plus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    
+    font-family: "Dela Gothic One";
+    font-size: 20px;
+}
+a p{
+    text-decoration: none;
+    text-align: center;
+    width: 20vw;
+    height: 5vh;
+    padding: 0.5vw;
+    padding-bottom: 2vh;
+    background-color: black;
+    color: white;
+    margin: 0.5vw;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    margin-bottom: 5vh;
+}
+.grid-s{
+    justify-content: space-between;
+    width: 90%;
+    display: flex;
+}
+.grid{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.grid .content{
+    width: 100%;
+
+}
+.back{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.comic{
+    background-color: black;
+    border-radius: 90px;
+    height: 420px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: white;
+    
+}
+.comicimg{
+    height: 420px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    margin-right: 5vw;
+}
+
+.com-c-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:5vw ;
+}
+.button-cs{
+    color: rgb(57, 58, 59);
+    background-color: rgb(206, 200, 200);
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:960px) { 
+    .box{
+        width: 95vw;
+        transform: translate(0, 100px);
+        height: 25%;
+    }
+    .pfp{
+        width: 20vw;
+        left: 37vw;
+    }
+
+    .link{
+        width: 8vw;
+    }
+    .soc{
+        justify-content: space-around;
+    }
+    h1{
+        margin-bottom: 0;
+        text-align: center;
+        
+    }
+    .bande{
+        width: 100%;
+    }
+    .plus{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        width: 30vw;
+    }
+    a p{
+        width: 30vw;
+        text-align: center;
+        margin-bottom: 1vw;
+
+    }
+    .linkc{ width: 8vw;}
+    .back{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
